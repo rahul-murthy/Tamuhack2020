@@ -13,32 +13,6 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
-	<!-- Chatbox -->
-	<div id="myID" class="bottomMenu hide">
-	<iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/6720f975-69aa-42c8-bafe-0b86381110e7" class="chatbox">
-	</iframe>
-	</div>
-	
-	<!-- Show after certain amount of scrolling -->
-	<script>
-		myID = document.getElementById("myID");
-
-		var myScrollFunc = function() {
-		  var y = window.scrollY;
-		  if (y >= 250) {
-			myID.className = "bottomMenu show"
-		  } else {
-			myID.className = "bottomMenu hide"
-		  }
-		};
-
-		window.addEventListener("scroll", myScrollFunc);
-	</script>
 	
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -56,7 +30,6 @@
 											<li><a href="index.html">Home</a></li>
 											<li><a href="ch1.html">Chat Bot</a></li>
 											<li><a href="ch2.html">Schedule Planner</a></li>
-                                            <li><a href="ch3.html">Text to Speech</a></li>
                                             <li><a href="ch4.html">About Us</a></li>
 											<li><a href="ch5.html">Contact Us</a></li>
                                             
@@ -81,7 +54,7 @@
 									
 									<hr/>
 									
-									<table style="width: 100%; ">
+									<table class="calendar">
 										<tr>
 											<td class="calendar">Monday</td>
 											<td class="calendar">Tuesday</td>
@@ -98,13 +71,57 @@
 											<td class="calendar num">2</td>
 											<td class="calendar num">3</td>
 											<td class="calendar num">4</td>
-											<td class="calendar num"> </td>
+											<td class="calendar num">5</td>
 										</tr>
-									
+										</tr>
+										<tr style="height: 50px">
+											<td class="calendar num">6</td>
+											<td class="calendar num">7</td>
+											<td class="calendar num">8</td>
+											<td class="calendar num">9</td>
+											<td class="calendar num">10</td>
+											<td class="calendar num">11</td>
+											<td class="calendar num">12</td>
+										</tr>
+										</tr>
+										<tr style="height: 50px">
+											<td class="calendar num">13</td>
+											<td class="calendar num">14</td>
+											<td class="calendar num">15</td>
+											<td class="calendar num">16</td>
+											<td class="calendar num">17</td>
+											<td class="calendar num">18</td>
+											<td class="calendar num">19</td>
+										</tr>
+										</tr>
+										<tr style="height: 50px">
+											<td class="calendar num">20</td>
+											<td class="calendar num">21</td>
+											<td class="calendar num">22</td>
+											<td class="calendar num">23</td>
+											<td class="calendar num">24</td>
+											<td class="calendar num">25</td>
+											<td class="calendar num">26</td>
+										</tr>
+										</tr>
+										<tr style="height: 50px">
+											<td class="calendar num">27</td>
+											<td class="calendar num">28</td>
+											<td class="calendar num">29</td>
+											<td class="calendar num">30</td>
+											<td class="calendar num">31</td>
+											<td class="calendar num"></td>
+											<td class="calendar num"></td>
+										</tr>
 									</table>
 								</section>
-
 							
+								<hr/>
+							
+								<section>
+									<h2 align="center"> Plan your events ahead of time! </h2>
+									<p align="center"> Check the calendar to see what days are busy and what times are available.</p>
+								</section>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -116,7 +133,7 @@
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Hack&Co </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 

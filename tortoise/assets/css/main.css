@@ -3886,7 +3886,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
+		background-color: #05005c;
 		text-align: center;
 	}
 
@@ -4024,17 +4024,29 @@ input, select, textarea {
 		opacity:0;
 	}
 	.show {
-		opacity:1;
+		opacity:.5;
 	}
 	
 /* Calendar */
 
+	table.calendar {
+		table-layout: fixed;	
+	}
+	
 	td.calendar {
 		text-align: center;
 		border: 1px solid black;
 	}
 	
 	td.num {
+		width: 20%;
 		text-align: left;
 		padding-top: 0px;
+		transition: .5s;
 	}
+	
+	td.num:hover {
+		background-color: lightblue;
+	}
+	
+/* About the Devs */
