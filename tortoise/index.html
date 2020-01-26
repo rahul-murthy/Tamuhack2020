@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+	
+	<!-- Chatbox -->
+	<div id="myID" class="bottomMenu hide">
+	<iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/6720f975-69aa-42c8-bafe-0b86381110e7" class="chatbox">
+	</iframe>
+	</div>
+	
+	<!-- Show after certain amount of scrolling -->
+	<script>
+		myID = document.getElementById("myID");
+
+		var myScrollFunc = function() {
+		  var y = window.scrollY;
+		  if (y >= 250) {
+			myID.className = "bottomMenu show"
+		  } else {
+			myID.className = "bottomMenu hide"
+		  }
+		};
+
+		window.addEventListener("scroll", myScrollFunc);
+	</script>
+	
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Home</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											
+											<li><a href="index.html">Home</a></li>
+											<li><a href="ch1.html">Chat Bot</a></li>
+											<li><a href="ch2.html">Schedule Planner</a></li>
+                                            <li><a href="ch3.html">Text to Speech</a></li>
+                                            <li><a href="ch4.html">About Us</a></li>
+                                            <li><a href="ch5.html">Contact Us</a></li>
+                                            
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Tortoise</h2>
+							<p>This is an App designed for independent elderly/disabled people<br />
+							who don't need any one's help<br />
+							</p>
+                            <!--
+                            <p id="demo" onclick="myFunction()">Click me.</p>
+
+                            <script>
+                            function myFunction() {
+                            document.getElementById("demo").innerHTML = "YOU CLICKED ME!";}
+                            </script>
+                            -->
+							<ul class="actions special">
+                                <form action="ch2.html">
+                                    <input type="submit" value="Search for Spots" />
+                                </form>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Let go of Life Alert, for we will never you down.</h2>
+							</header>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>Find open parking spots</h2>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Schedule important dates and events on the fly</h2>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>Text to speech</h2>
+							</div>
+						</section>
+					</section>
+
+				
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

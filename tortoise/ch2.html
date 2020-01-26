@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Schedule Planner</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+	<!-- Chatbox -->
+	<div id="myID" class="bottomMenu hide">
+	<iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/6720f975-69aa-42c8-bafe-0b86381110e7" class="chatbox">
+	</iframe>
+	</div>
+	
+	<!-- Show after certain amount of scrolling -->
+	<script>
+		myID = document.getElementById("myID");
+
+		var myScrollFunc = function() {
+		  var y = window.scrollY;
+		  if (y >= 250) {
+			myID.className = "bottomMenu show"
+		  } else {
+			myID.className = "bottomMenu hide"
+		  }
+		};
+
+		window.addEventListener("scroll", myScrollFunc);
+	</script>
+	
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Home</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											
+											<li><a href="index.html">Home</a></li>
+											<li><a href="ch1.html">Chat Bot</a></li>
+											<li><a href="ch2.html">Schedule Planner</a></li>
+                                            <li><a href="ch3.html">Text to Speech</a></li>
+                                            <li><a href="ch4.html">About Us</a></li>
+											<li><a href="ch5.html">Contact Us</a></li>
+                                            
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Schedule Planner</h2>
+							<p>Plan your trip ahead.</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+									<h4 align="center">January 2020</h4>
+									
+									<hr/>
+									
+									<table style="width: 100%; ">
+										<tr>
+											<td class="calendar">Monday</td>
+											<td class="calendar">Tuesday</td>
+											<td class="calendar">Wednesday</td>
+											<td class="calendar">Thursday</td>
+											<td class="calendar">Friday</td>
+											<td class="calendar">Saturday</td>
+											<td class="calendar">Sunday</td>
+										</tr>
+										<tr style="height: 50px">
+											<td class="calendar num"> </td>
+											<td class="calendar num"> </td>
+											<td class="calendar num">1</td>
+											<td class="calendar num">2</td>
+											<td class="calendar num">3</td>
+											<td class="calendar num">4</td>
+											<td class="calendar num"> </td>
+										</tr>
+									
+									</table>
+								</section>
+
+							
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
